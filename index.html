@@ -5,10 +5,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css">
   <title>Hogwarts clean up</title>
 </head>
 
 <body>
+
+  <header>
+
+    <div class="banner">
+      <img src="/assets/Hogwartscrest.png" alt="">
+      <div class="empty"></div>
+    </div>
+
+    <div class="tracking_wrapper">
+      <div class="tracking">
+        <span class="number">36</span>
+        <p>Students</p>
+      </div>
+      <div class="tracking tracking_houses">
+        <p>Gryffindor <span>12</span></p>
+        <p>Slytherin <span>12</span></p>
+        <p>Hufflepuff <span>12</span></p>
+        <p>Ravenclaw <span>12</span></p>
+      </div>
+      <div class="tracking">
+        <span class="number">0</span>
+        <p>Expelled</p>
+      </div>
+    </div>
+
+    <nav>
+
+      <!-- the first three buttons are getting a drop-down menu -->
+      <div class="expanding_button">
+
+        <button class="button_name" id="house_sort" data-id="house">House <div class="arrow" id="arrow_house"></div>
+        </button>
+
+        <div class="dropdown-content">
+          <div class="wrapper_input">
+            <p>Gryffindor</p><input type="checkbox" id="gryffindor_checkbox" class="house_check"
+              data-house="Gryffindor">
+          </div>
+          <div class="wrapper_input">
+            <p>Slytherin</p> <input type="checkbox" id="slytherin_checkbox" class="house_check" data-house="Slytherin">
+          </div>
+          <div class="wrapper_input">
+            <p>Hufflepuff </p><input type="checkbox" id="hufflepuff_checkbox" class="house_check"
+              data-house="Hufflepuff">
+          </div>
+          <div class="wrapper_input">
+            <p>Ravenclaw </p><input type="checkbox" id="ravenclaw_checkbox" class="house_check" data-house="Ravenclaw">
+          </div>
+        </div>
+      </div>
+
+      <div class="expanding_button">
+
+        <button class="button_name" id="blood_sort" data-id="blood">Blood <div class="arrow" id="arrow_blood"></div>
+        </button>
+
+        <div class="dropdown-content">
+          <div class="wrapper_input">
+            <p>Pure Blood</p><input type="checkbox" id="pureblood_checkbox" data-blood="Pure Blood">
+          </div>
+          <div class="wrapper_input">
+            <p>Half Blood</p> <input type="checkbox" id="halfblood_checkbox" data-blood="Half Blood">
+          </div>
+          <div class="wrapper_input">
+            <p>Muggle Born </p><input type="checkbox" id="muggleborn_checkbox" data-blood="Muggle-born">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="expanding_button">
+
+        <button class="button_name" id="name_sort" data-id="name">Name <div class="arrow" id="arrow_name"></div>
+        </button></div>
+
+      <div class="expanding_button" id="Prefect-filter">Prefects</div>
+      <div class="expanding_button" id="Squad-filter">Inquisition</div>
+
+      <input type="text" placeholder="Search...">
+
+    </nav>
+  </header>
+
+  <div class="modal-background">
+    <div class="modal-content">
+
+      <figure><img src="/images/potter_h.png" alt="">
+      </figure>
+      <div class="cartouche_name">
+        <h1>Brocklehurst Mandy</h1>
+        <div class="status">
+          <p class="modal_house">Gryffindor</p>
+          <div class="dot"></div>
+          <p class="modal_blood">Pure Blood</p>
+        </div>
+        <div class="tags">
+          <div class="prefect-tag">Prefect</div>
+          <div class="inquisition-tag">Inquisition</div>
+        </div>
+      </div>
+
+      <button class="make-prefect" data-student="">Make prefect</button>
+      <button class="make-squad" data-student="">Add to Inquisition Squad</button>
+      <button class="make-expelled" data-student=""> Expel</button>
+
+      <img class="sigil_img" src="/assets/Gryffindor_ClearBG.png" alt="sigle">
+    </div>
+  </div>
+  <div class="grid"></div>
+
+  <template>
+
+    <div class="cartouche">
+      <figure><img src="" alt=""></figure>
+      <div class="cartouche_name">
+        <h1>Brocklehurst Mandy</h1>
+        <div class="status">
+          <p class="house">Gryffindor</p>
+          <div class="dot"></div>
+          <p class="blood">Pure Blood</p>
+        </div>
+        <div class="tags">
+          <div class="prefect-tag">Prefect</div>
+          <div class="inquisition-tag">Inquisition</div>
+        </div>
+      </div>
+      <div class="color_cartouche"></div>
+    </div>
+
+  </template>
   <script src="students_cleanup.js"></script>
 </body>
 
