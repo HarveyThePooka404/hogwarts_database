@@ -382,24 +382,24 @@ function fillModal() {
     switch (true) {
         case this.classList.contains("Slytherin"):
             modal_background.classList.add("Slytherin");
-            sigil.src = "/assets/Slytherin_ClearBG.png"
+            sigil.src = "assets/Slytherin_ClearBG.png"
             break;
 
         case this.classList.contains("Gryffindor"):
             modal_background.classList.add("Gryffindor");
-            sigil.src = "/assets/Gryffindor_ClearBG.png"
+            sigil.src = "assets/Gryffindor_ClearBG.png"
 
             break;
 
         case this.classList.contains("Hufflepuff"):
             modal_background.classList.add("Hufflepuff");
-            sigil.src = "/assets/Hufflepuff_ClearBG.png"
+            sigil.src = "assets/Hufflepuff_ClearBG.png"
 
             break;
 
         case this.classList.contains("Ravenclaw"):
             modal_background.classList.add("Ravenclaw");
-            sigil.src = "/assets/Ravenclaw_ClearBG.png"
+            sigil.src = "assets/Ravenclaw_ClearBG.png"
 
             break;
     }
