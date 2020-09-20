@@ -186,7 +186,7 @@ function fillCartouche(elem) {
 
     //fill clone;
 
-    copy.querySelector("img").src = `/images/${elem.image}`;
+    copy.querySelector("img").src = `images/${elem.image}`;
     copy.querySelector("h1").textContent = elem.firstName + " " + elem.lastName;
     copy.querySelector(".house").textContent = elem.house;
     copy.querySelector(".blood").textContent = elem.blood;
