@@ -162,7 +162,6 @@ nav {
         position: absolute;
         z-index: 8;
         background-color:var(--banner-color);
-        height: 33vh;
         width: 250px;
         top: 10px;
         left: 20px;
@@ -268,7 +267,7 @@ nav {
 
 /* end of the break point 2*/ 
 
-@media only screen and (min-width: 1440px) and (max-width: 1600px){
+@media only screen and (min-width: 1440px){
 
     body {
         background-color: #DADADA;
